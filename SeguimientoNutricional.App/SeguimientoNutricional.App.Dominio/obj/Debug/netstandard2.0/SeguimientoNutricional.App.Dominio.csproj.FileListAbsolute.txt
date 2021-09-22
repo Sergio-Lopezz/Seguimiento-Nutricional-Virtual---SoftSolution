@@ -1,0 +1,9 @@
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\obj\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.csprojAssemblyReference.cache
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\obj\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.AssemblyInfoInputs.cache
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\obj\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.AssemblyInfo.cs
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\obj\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.csproj.CoreCompileInputs.cache
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\bin\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.deps.json
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\bin\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.dll
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\bin\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.pdb
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\obj\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.dll
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Dominio\obj\Debug\netstandard2.0\SeguimientoNutricional.App.Dominio.pdb
