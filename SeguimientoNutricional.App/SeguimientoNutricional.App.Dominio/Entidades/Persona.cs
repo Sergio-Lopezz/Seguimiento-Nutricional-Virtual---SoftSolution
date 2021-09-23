@@ -19,11 +19,6 @@ namespace SeguimientoNutricional.App.Dominio
 
 
 
-
-
-
-        
-
         public string Correo { get; set; }
 
         public string Ciudad { get; set; }
