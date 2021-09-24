@@ -16,9 +16,6 @@ namespace SeguimientoNutricional.App.Dominio
         
         public Genero Genero { get; set; }
 
-
-
-
         public string Correo { get; set; }
 
         public string Ciudad { get; set; }
