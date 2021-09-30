@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tuke7HaW2P4dao+Ay//K1LrzMGtT8Am/ZtIHlI+HYI4bURHB6GhAr8M0eQ3kFVL2egV8rnRhBlLjf/AeX9S79g==",
+  "dgSpecHash": "kbBtIqogeRq2H5x/q7gaHp1WUvxXJQcX/ggOcPsVkFXWGQY/T4vuezfixx5VEyIWyUhKXkGs7mrjhwTvnhbRcg==",
   "success": true,
   "projectFilePath": "S:\\Mision Tic\\Ciclo#3\\DesarrolloDeSoftware\\SeguimientoNutricionalVirtual\\SeguimientoNutricional.App\\SeguimientoNutricional.App.Dominio\\SeguimientoNutricional.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
