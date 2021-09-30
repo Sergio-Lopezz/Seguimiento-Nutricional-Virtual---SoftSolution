@@ -13,6 +13,7 @@ namespace SeguimientoNutricional.App.Frontend.Pages.PaginasApp
     {
         private readonly IRepositorioPaciente _repoPaciente;
 
+        
         public Paciente Paciente { get; set; }
 
         public PaginaCrearModel(IRepositorioPaciente _repoPaciente)
@@ -22,6 +23,16 @@ namespace SeguimientoNutricional.App.Frontend.Pages.PaginasApp
         public void OnGet() //Envia Informacion al HMTL
         {
             Paciente=new Paciente();
+        }
+
+        public IActionResult OnPost(Paciente paciente)
+        {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+            _repoPaciente.AddPaciente(paciente);
+            return RedirectToPage("../Index");
         }
 
 
