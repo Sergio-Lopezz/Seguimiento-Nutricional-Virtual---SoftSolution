@@ -20,12 +20,17 @@ namespace SeguimientoNutricional.App.Dominio
         [Required(ErrorMessage = "El Telefono es Obligatorio"), StringLength(15)]
         public string Telefono { get; set; }
         
+        [Required(ErrorMessage = "El Genero es Obligatorio")]
         public Genero Genero { get; set; }
 
+        [Required(ErrorMessage = "El Correo es Obligatorio"), StringLength(30)]
         public string Correo { get; set; }
 
+        [Required(ErrorMessage = "La Ciudad es Obligatorio"), StringLength(30)]
         public string Ciudad { get; set; }
 
+        [DataType(DataType.Date)]
+        [Display(Name = "Fecha De Nacimiento")]
         public DateTime FechaNacimiento { get; set; }
 
 

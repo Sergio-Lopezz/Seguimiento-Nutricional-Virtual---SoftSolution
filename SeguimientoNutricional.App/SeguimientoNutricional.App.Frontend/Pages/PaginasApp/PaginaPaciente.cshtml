@@ -1,0 +1,32 @@
+﻿@page
+@model SeguimientoNutricional.App.Frontend.Pages.PaginasApp.PaginaPacienteModel
+@{
+}
+
+<h1>Lista Pacientes</h1> <br>
+
+<a class="btn btn-primary" asp-page="./PaginaCrear">Crear Nuevo Paciente</a> <br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Numero Telefono</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Ciudad</th>
+        </tr>
+    </thead>
+
+    @foreach(var p in Model.Pacientes)
+    {
+        <tr>
+            <td>@p.Nombre</td>
+            <td>@p.Apellido</td>
+            <td>@p.Telefono</td>
+            <td>@p.Genero</td>
+            <td>@p.Ciudad</td>
+        </tr>
+    }
+
+</table>

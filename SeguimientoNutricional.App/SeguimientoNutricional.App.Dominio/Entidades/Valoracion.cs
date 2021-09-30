@@ -1,19 +1,25 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace SeguimientoNutricional.App.Dominio
 {
     public class Valoracion
     {
-        public int Id {get; set; }
+        public int Id { get; set; }
 
-        public int CaloriasConsumidas {get; set; }
+        [Required(ErrorMessage = "Ingrese Calorias")]
+        public float CaloriasConsumidas { get; set; }
 
-        public int Estatura {get; set; }
+        [Required(ErrorMessage = "Ingrese Estatura")]
+        public float Estatura { get; set; }
 
-        public int Peso {get; set; }
+        [Required(ErrorMessage = "Ingrese Peso")]
+        public float Peso { get; set; }
 
-        public int Imc {get; set; }
+        public float Imc { get; set; }
 
-        public DateTime FechaRegistro {get; set; }
+        [DataType(DataType.Date)]
+        [Display(Name = "Fecha De Creacion Registro")]
+        public DateTime FechaRegistro { get; set; }
     }
 }

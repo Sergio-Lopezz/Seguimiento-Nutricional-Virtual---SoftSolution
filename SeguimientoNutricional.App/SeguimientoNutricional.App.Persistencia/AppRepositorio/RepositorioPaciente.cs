@@ -7,12 +7,22 @@ namespace SeguimientoNutricional.App.Persistencia
 {
     public class RepositorioPaciente : IRepositorioPaciente
     {
+        private readonly AppContext _appContext = new AppContext(); //Se debe inicializar el AppContext() para trabjar desde el frontend
+
+        //######################################################
+        //Se utiliza cuando se trabaja con la .Consola
+        
+        /*
         private readonly AppContext _appContext;
 
         public RepositorioPaciente(AppContext appContext)
         {
             _appContext = appContext;
         }
+        */
+        //######################################################
+
+        
 
         public Paciente AddPaciente(Paciente paciente)
         {
