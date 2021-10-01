@@ -61,20 +61,28 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellido")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Ciudad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Correo")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DocumentoIdentidad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("datetime2");
@@ -83,10 +91,14 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("Id");
 
@@ -103,7 +115,9 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Descripcion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime>("FechaRegistro")
                         .HasColumnType("datetime2");
@@ -120,20 +134,20 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("CaloriasConsumidas")
-                        .HasColumnType("int");
+                    b.Property<float>("CaloriasConsumidas")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Estatura")
-                        .HasColumnType("int");
+                    b.Property<float>("Estatura")
+                        .HasColumnType("real");
 
                     b.Property<DateTime>("FechaRegistro")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Imc")
-                        .HasColumnType("int");
+                    b.Property<float>("Imc")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Peso")
-                        .HasColumnType("int");
+                    b.Property<float>("Peso")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 
@@ -145,10 +159,14 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                     b.HasBaseType("SeguimientoNutricional.App.Dominio.Persona");
 
                     b.Property<string>("Especialidad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("TarjetaProfesional")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasDiscriminator().HasValue("Coach");
                 });
@@ -169,7 +187,9 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("TajertaProfesional")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasIndex("HistorialRecomendacionId");
 
@@ -188,7 +208,9 @@ namespace SeguimientoNutricional.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<int?>("HistorialRecomendacionId")
                         .HasColumnType("int");

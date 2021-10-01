@@ -1,5 +1,6 @@
 ﻿@page
 @model SeguimientoNutricional.App.Frontend.Pages.PaginasApp.PaginaCrearModel
+@using SeguimientoNutricional.App.Dominio
 @{
 }
 
@@ -34,7 +35,8 @@
 
     <div class="form-group">
         <label asp-for="Paciente.Genero">Ingrese Genero</label>
-        <input type="text" asp-for="Paciente.Genero" class="form-control">
+        <select asp-for="Paciente.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-select"></select>
+        <!--<input type="text" asp-for="Paciente.Genero" class="form-control">-->
         <span class="text-danger" asp-validation-for="Paciente.Genero"></span>
     </div>
 

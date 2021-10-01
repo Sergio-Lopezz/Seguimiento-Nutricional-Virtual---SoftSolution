@@ -11,7 +11,6 @@ namespace SeguimientoNutricional.App.Persistencia
 
         //######################################################
         //Se utiliza cuando se trabaja con la .Consola
-
         /*
         private readonly AppContext _appContext;
 

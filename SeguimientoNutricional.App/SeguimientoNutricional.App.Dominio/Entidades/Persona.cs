@@ -31,6 +31,8 @@ namespace SeguimientoNutricional.App.Dominio
 
         [DataType(DataType.Date)]
         [Display(Name = "Fecha De Nacimiento")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "0:yyyy/MM/dd}")]
+        [Required(ErrorMessage="Fecha de Nacimiento Obligaoria")]
         public DateTime FechaNacimiento { get; set; }
 
 
