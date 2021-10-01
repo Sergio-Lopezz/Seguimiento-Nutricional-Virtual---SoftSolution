@@ -7,13 +7,13 @@ namespace SeguimientoNutricional.App.Dominio
     {    
         //public int Id {get; set; }
 
-        //[Required(ErrorMessage = "La Latitud es Obligatorio"), StringLength(15)]
+        [Required(ErrorMessage = "La Latitud es Obligatorio")]
         public float Latitud {get; set; }
 
-        //[Required(ErrorMessage = "La Longitud es Obligatorio"), StringLength(15)]
+        [Required(ErrorMessage = "La Longitud es Obligatorio")]
         public float Longitud {get; set; }   
 
-        //[Required(ErrorMessage = "La Direccion es Obligatorio"), StringLength(15)]
+        [Required(ErrorMessage = "La Direccion es Obligatorio"), StringLength(15)]
         public string Direccion {get; set; }
 
         public Nutricionista Nutricionista {get; set; }

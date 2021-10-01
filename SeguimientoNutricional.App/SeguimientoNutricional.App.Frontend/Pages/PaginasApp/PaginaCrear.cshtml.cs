@@ -25,6 +25,7 @@ namespace SeguimientoNutricional.App.Frontend.Pages.PaginasApp
             Paciente=new Paciente();
         }
 
+        
         public IActionResult OnPost(Paciente paciente)
         {
             if(!ModelState.IsValid)

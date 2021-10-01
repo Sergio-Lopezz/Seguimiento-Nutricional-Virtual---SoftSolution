@@ -21,6 +21,8 @@ namespace SeguimientoNutricional.App.Persistencia
 
         public DbSet<Valoracion> Valoracion { get; set; }
 
+        //public DbSet<Genero> Generos { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

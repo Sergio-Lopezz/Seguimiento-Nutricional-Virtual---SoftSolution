@@ -6,6 +6,14 @@
 <h1>CREAR PACIENTE</h1>
 
 <form method="post">
+
+    <div class="form-group">
+        <label asp-for="Paciente.DocumentoIdentidad" class="form-label">Ingrese N° Documento de Identidad:</label>
+        <input type="text" asp-for="Paciente.DocumentoIdentidad" class="form-control"
+            placeholder="Ingresa N° Documento de Identidad" />
+        <span class="text-danger" asp-validation-for="Paciente.DocumentoIdentidad"></span>
+    </div>
+
     <div class="form-group">
         <label asp-for="Paciente.Nombre">Ingrese Nombre:</label>
         <input type="text" asp-for="Paciente.Nombre" class="form-control">
@@ -15,17 +23,68 @@
     <div class="form-group">
         <label asp-for="Paciente.Apellido">Ingrese Apellido:</label>
         <input type="text" asp-for="Paciente.Apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Apellido"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Paciente.Telefono">Ingrese Numero Telefono</label>
-        <input type="text" asp-for="Paciente.Telefono" class="form-control">
+        <label asp-for="Paciente.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="Paciente.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.FechaNacimiento"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Paciente.Genero">Ingrese Genero</label>
         <input type="text" asp-for="Paciente.Genero" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Genero"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Crear Paciente</button>
+    <div class="form-group">
+        <label asp-for="Paciente.Telefono">Ingrese Numero Telefono:</label>
+        <input type="text" asp-for="Paciente.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Telefono"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Paciente.Correo">Correro Electronico:</label>
+        <input type="email" asp-for="Paciente.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Correo"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Paciente.Ciudad">Ciudad:</label>
+        <input type="text" asp-for="Paciente.Ciudad" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Ciudad"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Paciente.Latitud">Latitud:</label>
+        <input type="number" asp-for="Paciente.Latitud" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Latitud"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Paciente.Longitud">Longitud:</label>
+        <input type="number" asp-for="Paciente.Longitud" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Longitud"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Paciente.Direccion">Direccion:</label>
+        <input type="text" asp-for="Paciente.Direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Direccion"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear Paciente</button><br>
 </form>
+
+<div>
+    <a asp-page="./PaginaPaciente" class="btn btn-primary">Volver</a><br>
+</div>
+
+<!-- Validacion por parte del cliente, si hay valores invalidos no se ejecuta ninguna peticion
+
+-->
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -13,7 +13,9 @@ namespace SeguimientoNutricional.App.Persistencia
         
         void DeletePaciente(int idPaciente);
 
-        Paciente GetPaciente(int idPaciente);    
+        Paciente GetPaciente(int idPaciente);   
+
+
 
     }
 }

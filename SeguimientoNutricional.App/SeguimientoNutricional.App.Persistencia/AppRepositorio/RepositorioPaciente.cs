@@ -11,7 +11,7 @@ namespace SeguimientoNutricional.App.Persistencia
 
         //######################################################
         //Se utiliza cuando se trabaja con la .Consola
-        
+
         /*
         private readonly AppContext _appContext;
 
@@ -22,7 +22,7 @@ namespace SeguimientoNutricional.App.Persistencia
         */
         //######################################################
 
-        
+
 
         public Paciente AddPaciente(Paciente paciente)
         {
@@ -56,23 +56,24 @@ namespace SeguimientoNutricional.App.Persistencia
         public Paciente UpdatePaciente(Paciente paciente)
         {
             var pacienteEncontrado = _appContext.Paciente.FirstOrDefault(p => p.Id == paciente.Id);
-            if (pacienteEncontrado!=null)
+            if (pacienteEncontrado != null)
             {
-                pacienteEncontrado.DocumentoIdentidad=paciente.DocumentoIdentidad;
-                pacienteEncontrado.Nombre=paciente.Nombre;
-                pacienteEncontrado.Apellido=paciente.Apellido;
-                pacienteEncontrado.Telefono=paciente.Telefono;
-                pacienteEncontrado.Genero=paciente.Genero;
-                pacienteEncontrado.Correo=paciente.Correo;
-                pacienteEncontrado.Ciudad=paciente.Ciudad;
-                pacienteEncontrado.FechaNacimiento=paciente.FechaNacimiento;
-                pacienteEncontrado.Latitud=paciente.Latitud;
-                pacienteEncontrado.Longitud=paciente.Longitud;
-                pacienteEncontrado.Direccion=paciente.Direccion;
+                pacienteEncontrado.DocumentoIdentidad = paciente.DocumentoIdentidad;
+                pacienteEncontrado.Nombre = paciente.Nombre;
+                pacienteEncontrado.Apellido = paciente.Apellido;
+                pacienteEncontrado.Telefono = paciente.Telefono;
+                pacienteEncontrado.Genero = paciente.Genero;
+                pacienteEncontrado.Correo = paciente.Correo;
+                pacienteEncontrado.Ciudad = paciente.Ciudad;
+                pacienteEncontrado.FechaNacimiento = paciente.FechaNacimiento;
+                pacienteEncontrado.Latitud = paciente.Latitud;
+                pacienteEncontrado.Longitud = paciente.Longitud;
+                pacienteEncontrado.Direccion = paciente.Direccion;
 
                 _appContext.SaveChanges();
             }
             return pacienteEncontrado;
         }
+
     }
 }

@@ -26,7 +26,7 @@ namespace SeguimientoNutricional.App.Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
+            services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>(); //Dependencia 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
