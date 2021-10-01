@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SeguimientoNutricional.App.Frontend.Pages.PaginasApp
 {
-    public class PaginaEjemploModel : PageModel
+    public class PaginaEditarModel : PageModel
     {
         public void OnGet()
         {

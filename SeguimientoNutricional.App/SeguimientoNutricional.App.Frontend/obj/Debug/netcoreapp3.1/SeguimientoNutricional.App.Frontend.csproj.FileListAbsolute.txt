@@ -80,5 +80,5 @@ S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\Seguimi
 S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Frontend\obj\Debug\netcoreapp3.1\SeguimientoNutricional.App.Frontend.dll
 S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Frontend\obj\Debug\netcoreapp3.1\SeguimientoNutricional.App.Frontend.pdb
 S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Frontend\obj\Debug\netcoreapp3.1\SeguimientoNutricional.App.Frontend.genruntimeconfig.cache
-S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\PaginasApp\PaginaEjemplo.cshtml.g.cs
 S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\PaginasApp\PaginaCrear.cshtml.g.cs
+S:\Mision Tic\Ciclo#3\DesarrolloDeSoftware\SeguimientoNutricionalVirtual\SeguimientoNutricional.App\SeguimientoNutricional.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\PaginasApp\PaginaEditar.cshtml.g.cs
