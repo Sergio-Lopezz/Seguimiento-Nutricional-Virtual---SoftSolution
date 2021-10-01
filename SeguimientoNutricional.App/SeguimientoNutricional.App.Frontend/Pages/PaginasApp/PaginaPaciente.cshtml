@@ -41,9 +41,9 @@
                     <td>@p.Genero</td>
                     <td>@p.Ciudad</td>
                     <td>
-                        <a href="" class="btn btn-outline-secondary" >Detalle</a>
-                        <a class="btn btn-outline-warning" asp-page="../PaginasApp/PaginaEditar">Editar</a>
-                        <a href="" class="btn btn-outline-danger" >Borrar</a>
+                        <a class="btn btn-outline-secondary" >Detalle</a>
+                        <a class="btn btn-outline-warning" asp-page="../PaginasApp/PaginaEditar" asp-route-pacienteId="@p.Id">Editar</a>
+                        <a class="btn btn-outline-danger" >Borrar</a>
                     </td>
                 </tr>
             }
